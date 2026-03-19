@@ -50,12 +50,10 @@ CREATE TABLE IF NOT EXISTS manutencao(
     forma_pagamento TEXT,
     km_atual_manutencao INTEGER DEFAULT 0,
     status_mntc INTEGER NOT NULL DEFAULT 1,
-    oficina_id INTEGER NOT NULL,
     mecanico_id INTEGER NOT NULL,
 
     FOREIGN KEY(veiculo_id) REFERENCES veiculo(id) ON DELETE CASCADE,
     FOREIGN KEY(tipo_manutencao_id) REFERENCES tipo_manutencao(id) ON DELETE CASCADE,
-    FOREIGN KEY(oficina_id) REFERENCES oficina(id) ON DELETE CASCADE,
     FOREIGN KEY(mecanico_id) REFERENCES mecanico(id) ON DELETE CASCADE
 
 );
