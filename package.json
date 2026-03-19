@@ -1,5 +1,25 @@
 {
   "dependencies": {
     "sqlite3": "^6.0.1"
-  }
+  },
+  "name": "manutecar-sistema-de-acompanhamento",
+  "version": "1.0.0",
+  "description": "Sistema de cadastro e acompanhamento de manutenções e revisões automotivas, para controle pessoal",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IzahTerenci0/manutecar-sistema-de-acompanhamento.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IzahTerenci0/manutecar-sistema-de-acompanhamento/issues"
+  },
+  "homepage": "https://github.com/IzahTerenci0/manutecar-sistema-de-acompanhamento#readme"
 }
