@@ -2,7 +2,7 @@
 ** Estruturas de tabelas e relacionamentos.
 */
 
-//--------------------------------------------------------------------------------------------- USUÁRIO
+--------------------------------------------------------------------------------------------- USUÁRIO
 CREATE TABLE IF NOT EXISTS usuario(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS usuario(
 );
 
 
-//--------------------------------------------------------------------------------------------- VEÍCULO
+--------------------------------------------------------------------------------------------- VEÍCULO
 CREATE TABLE IF NOT EXISTS veiculo(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS veiculo(
 );
 
 
-//--------------------------------------------------------------------------------------------- MANUTENÇÃO DO VEÍCULO
+--------------------------------------------------------------------------------------------- MANUTENÇÃO DO VEÍCULO
 CREATE TABLE IF NOT EXISTS manutencao(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS manutencao(
 );
 
 
-//--------------------------------------------------------------------------------------------- TIPO DE MANUTENÇÃO REALIZADA
+--------------------------------------------------------------------------------------------- TIPO DE MANUTENÇÃO REALIZADA
 CREATE TABLE IF NOT EXISTS tipo_manutencao(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS tipo_manutencao(
 );
 
 
-//--------------------------------------------------------------------------------------------- OFICINA MECÂNICA
+--------------------------------------------------------------------------------------------- OFICINA MECÂNICA
 CREATE TABLE IF NOT EXISTS oficina(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS oficina(
 );
 
 
-//--------------------------------------------------------------------------------------------- MECÂNICO RESPONSÁVEL
+--------------------------------------------------------------------------------------------- MECÂNICO RESPONSÁVEL
 CREATE TABLE IF NOT EXISTS mecanico(
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
