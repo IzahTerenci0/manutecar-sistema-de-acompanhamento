@@ -106,5 +106,43 @@ exports.buscarUsuarioPorId = async (req, res) => {
         });
 
     }
+
+};
+
+
+//------------------------------------------------------------------------------------------- Inativar usuário
+exports.deletarUsuario = async (req, res) => {
+
+    try{
+
+        const { id } = req.params;
+
+        const resultado = await usuarioService.deletarUsuario(id);
+
+        if(resultado.changes === 0){
+
+            return res.status(404).json({
+
+                erro: "Usuário não encontrado ou já inativo."
+
+            });
+
+        }
+
+        return res.status(200).json({
+
+            mensagem: "Usuário inativado com sucesso."
+
+        });
+
+    } catch(error){
+
+        return res.status(500).json({
+
+            erro: error.message
+
+        });
+
+    }
     
 };
