@@ -73,5 +73,38 @@ exports.listarUsuarios = async (req, res) => {
         });
 
     }
+
+};
+
+
+//------------------------------------------------------------------------------------------- Buscar usuário por ID
+exports.buscarUsuarioPorId = async (req, res) => {
+
+    try{
+
+        const { id } = req.params;
+        const usuario = await usuarioService.buscarUsuarioID(id);
+
+        if(!usuario){
+
+            return res.status(404).json({
+
+                erro: "Usuário não encontrado."
+
+            });
+
+        }
+
+        return res.status(200).json(usuario);
+
+    } catch(error){
+
+        return res.status(500).json({
+
+            erro: error.message
+
+        });
+
+    }
     
 };
