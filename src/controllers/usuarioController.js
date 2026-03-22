@@ -54,3 +54,24 @@ exports.criarUsuario = async(req, res) => {
     }
 
 };
+
+
+//------------------------------------------------------------------------------------------- Listar usuários
+exports.listarUsuarios = async (req, res) => {
+
+    try{
+
+        const usuarios = await usuarioService.listarUsuarios();
+        return res.status(200).json(usuarios);
+
+    } catch(error){
+
+        return res.status(500).json({
+
+            erro: error.message
+        
+        });
+
+    }
+    
+};
